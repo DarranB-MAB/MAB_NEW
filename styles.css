@@ -114,3 +114,14 @@ body{background:linear-gradient(135deg,#f7f8f5 0%,var(--mab-white) 100%);color:v
 .suggest-section:first-child{border-top:4px solid var(--mab-orange)}.suggest-section:last-child{border-top:4px solid var(--mab-pink)}
 .filter:hover,.filter[aria-expanded="true"],.search-box:focus-within{border-color:var(--info-dark);box-shadow:0 0 0 3px rgba(169,222,230,.28)}
 .toast{background:var(--mab-slate);border-left:4px solid var(--mab-mint)}
+
+/* Source-portal parity adjustments */
+.header-status{align-self:center;margin:0 14px;padding:7px 12px;border-radius:18px;background:rgba(145,123,185,.2);color:#66518f;font-size:11px;font-weight:650;white-space:nowrap}
+.tab-count{display:inline-grid;place-items:center;min-width:19px;height:19px;margin-left:7px;border-radius:10px;background:#e7e9e8;color:var(--mab-slate);font-size:10px}
+.single-summary{grid-template-columns:minmax(220px,1fr);max-width:340px}
+.client-source{max-width:1440px}.preference-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #edf0ed;margin-bottom:24px}.client-source h3{font-size:14px;margin:22px 0 10px}
+.journal-actions{display:flex;align-items:center;gap:12px}.journal-actions .filter-wrap{width:190px}.journal-actions .secondary{height:46px}
+.links-panel>div{display:flex;gap:10px;margin-top:18px}.links-panel+.workspace-panel{display:flex;align-items:center;justify-content:space-between}.links-panel+.workspace-panel+.workspace-panel{display:flex;align-items:center;gap:18px}.links-panel+.workspace-panel+.workspace-panel a{margin-left:auto;color:var(--info-dark)}
+.fact-find-view{min-height:520px}
+.phone-field{display:flex;height:42px;border:1px solid var(--line);border-radius:5px;overflow:hidden}.phone-field span{display:grid;place-items:center;padding:0 11px;background:var(--mab-white);border-right:1px solid var(--line)}.phone-field input{border:0!important;flex:1;min-width:0}.upload-placeholder{height:62px;border:1px dashed #bfc9c3;border-radius:5px;background:#fff;color:var(--mab-grey)}.danger{margin-right:auto;border:1px solid var(--error-dark);background:#fff;color:var(--error-dark);border-radius:5px;padding:10px 17px}
+@media(max-width:760px){.preference-grid{grid-template-columns:1fr}.header-status{display:none}.journal-actions{align-items:stretch;flex-direction:column}.journal-actions .filter-wrap{width:100%}}
