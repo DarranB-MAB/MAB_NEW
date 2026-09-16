@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAB Portal — Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="sidebar" aria-label="Main navigation">
+    <a class="brand" href="#dashboard" aria-label="MAB home"><img src="assets/mab-logo.svg" alt="MAB"></a>
+    <button class="profile" type="button" aria-expanded="false">
+      <span class="avatar">DB</span><span><b>Darran Brindley</b><small>Administrator</small></span><span class="chevron">⌄</span>
+    </button>
+    <nav id="navigation"></nav>
+    <small class="build">V8-8-4-ci · Built: 11/09/2026 07:46<br>Branch: EVER-1068</small>
+  </aside>
+
+  <main>
+    <header id="topbar" class="topbar"></header>
+    <div id="page" class="page"></div>
+  </main>
+
+  <button class="chat-button" aria-label="Open MAB assistant"><span class="notification"></span><span class="bot-face">••</span></button>
+  <section class="chat-panel" aria-label="MAB assistant">
+    <header><span><b>MAB assistant</b><small>Online</small></span><button aria-label="Close assistant">×</button></header>
+    <div class="chat-body"><p>Hi Darran — how can I help today?</p></div>
+    <form><input aria-label="Message" placeholder="Type your message…"><button type="submit">Send</button></form>
+  </section>
+
+  <dialog id="metric-dialog"><button class="dialog-close" aria-label="Close">×</button><p class="eyebrow">Metric details</p><h2></h2><p class="dialog-value"></p><div class="dialog-chart"></div><p>No activity recorded for the selected period.</p></dialog>
+  <dialog id="form-dialog" class="form-dialog"><button class="dialog-close" aria-label="Close">×</button><p class="eyebrow">MAB portal</p><h2></h2><form><label>Client name<input required placeholder="Enter a name"></label><label>Email address<input type="email" placeholder="name@example.com"></label><label>Assigned adviser<select><option>Darran Brindley</option><option>Sarah Taylor</option><option>Michael Davis</option></select></label><div class="dialog-actions"><button type="button" class="secondary">Cancel</button><button type="submit" class="primary">Save</button></div></form></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
